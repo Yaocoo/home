@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom styles -->
+    <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/xview.css" rel="stylesheet">
+
+    <title>Document View</title>
+</head>
+
+<body>
+
+    <div role="navigation" id="foo" class="nav-collapse">
+        <ul>
+            <li class="active">
+                <a href="./index.html" style="font-size: 24px; padding-left: 1em;">Yaocoo' Page</a>
+            </li>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./index.html">Research</a>
+            </li>
+            <li>
+                <a href="./index.html">Service</a>
+            </li>
+            <li>
+                <a href="./xview.html?fn=sample&tp=article">Share</a>
+            </li>
+            <li>
+                <a href="./xview.html?fn=Resume&tp=file">About me</a>
+            </li>
+        </ul>
+    </div>
+
+    <div role="main" class="main" style="padding:0;">
+        <a href="#nav" class="nav-toggle">Menu</a>
+
+        <div id="pdf-view" style="height:100%; width:100%;"></div>
+
+    </div>
+
+    <script src="assets/js/responsive-nav.js"></script>
+    <script src="assets/js/pdfobject.min.js"></script>
+    <script src="assets/js/utils.yaoc.js"></script>
+    <script>
+        var navigation = responsiveNav("foo", {
+            customToggle: ".nav-toggle"
+        });
+
+        file = './article/sample.pdf';
+        fn = GetQueryString('fn');
+        tp = GetQueryString('tp');
+        if (fn != null && tp != null && fn.toString().length > 1 && tp.toString().length > 1) {
+            file = './' + tp + '/' + fn + '.pdf';
+        }
+
+        var options = {
+            pdfOpenParams: {
+                view: 'FitBH',
+                scrollbar: '0',
+                toolbar: '0',
+                statusbar: '0',
+                messages: '0',
+                navpanes: '0'
+            },
+            fallbackLink: '<p>This browser does not support inline PDFs.</p>',
+        };
+        PDFObject.embed(file, "#pdf-view", options);
+    </script>
+</body>
+
+</html>
