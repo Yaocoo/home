@@ -1,7 +1,7 @@
 # Yaocoo's homepage
 
 ## My homepage
-[https://yaocoo.github.io/homepage/](https://yaocoo.github.io/homepage/)
+- [https://yaocoo.github.io/homepage/](https://yaocoo.github.io/homepage/)
 
 ## Github bookmark
 
