@@ -234,6 +234,7 @@ a.bg-light:hover {
     text-align: left;
     /* border: solid; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    font-size: 0.8rem;
 }
 .timeline ul li div:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
