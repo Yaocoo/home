@@ -3,12 +3,26 @@
  */
 
 @font-face {
+    font-family: Bilbo Swash Caps;
+    src: url('../font/BilboSwashCaps-Regular.ttf');
+}
+
+@font-face {
     font-family: Parisienne;
     src: url('../font/Parisienne-Regular.ttf');
 }
 
 .site-font {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+    font-family: "Times New Roman", Times, serif;
+}
+
+.font-BilboSwashCamps {
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.font-Parisienne {
+    font-family: 'Parisienne', cursive;
 }
 
 .w100 {
@@ -37,8 +51,8 @@
 #topBtn {
     display: none;
     position: fixed;
-    bottom: 50px;
-    right: 40px;
+    bottom: 30px;
+    right: 15px;
     z-index: 99;
     border: none;
     outline: none;
@@ -54,34 +68,33 @@
 
 
 /* nav-menu */
-
 #site-nav {
     text-align: center;
 }
 
 .site-nav li {
-    font-size: 20px;
+    font-size: 18px;
     display: inline-block;
     padding: 0px 5px;
-    border-bottom: solid transparent 2pt;
+    border-bottom: solid transparent 1.5pt;
 }
 
 .site-nav li:hover {
-    border-bottom: solid #00ab94 2pt;
+    border-bottom: solid #00ab94 1.5pt;
 }
 
 .nav-active {
-    border-bottom: solid #00ab94 2pt;
+    border-bottom: solid #00ab94 1.5pt;
 }
 
 .site-nav form {
-    padding: 3px 5px;
+    padding: 0px 3px;
 }
 
 .top-screen {
     position: relative;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
     color: #fff;
     width: 100%;
     height: 50%;
@@ -92,19 +105,18 @@
 .top-logo-text {
     display: inline-block;
     position: relative;
-    top: 30%;
+    top: 39%;
     padding-left: 5px;
     color: #fff;
-    font-size: 3.5em;
-    font-family: 'Parisienne', cursive;
+    font-size: 3em;
 }
 
 #profile-pic {
     position: relative;
     z-index: 3;
-    width: 180px;
-    height: 180px;
-    margin: -90px 0 80px 0;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 90px 0;
     border-radius: 50%;
 }
 
@@ -113,8 +125,10 @@
  * components
  */
 
-.content-block-1 {
+.welcome-block-1 {
     margin: 0 0 50px 0;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
 }
 
 .left-bar,
@@ -124,6 +138,15 @@
     border: 0;
 }
 
+.content-separator {
+	display: block;
+	content: "";
+	width: 25px;
+	height: 3px;
+	background: #000;
+	margin: 85px auto 0;
+	border-radius: 1px;
+}
 
 /*
  * supplement bootstrap
@@ -199,9 +222,8 @@ a.bg-light:hover {
 
 .timeline ul {
     background: #FFF;
-    border-top: solid rgba(0, 0, 0, 0.8) 0.5px;
-    margin: 50px 0 20px 0;
-    padding: 20px 0;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
 }
 
 .timeline ul li {
