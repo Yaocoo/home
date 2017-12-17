@@ -1,53 +1,6 @@
 /*
- * Base components
+ * Top button
  */
-
-@font-face {
-    font-family: Bilbo Swash Caps;
-    src: url('../font/BilboSwashCaps-Regular.ttf');
-}
-
-@font-face {
-    font-family: Parisienne;
-    src: url('../font/Parisienne-Regular.ttf');
-}
-
-.site-font {
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-    font-family: "Times New Roman", Times, serif;
-}
-
-.font-BilboSwashCamps {
-    font-family: 'Bilbo Swash Caps', cursive;
-}
-
-.font-Parisienne {
-    font-family: 'Parisienne', cursive;
-}
-
-.w100 {
-    width: 100%;
-}
-
-.h100 {
-    height: 100%;
-}
-
-.row {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-.color1 {
-    color: #00ab94;
-}
-
-
-/*
- * Core components
- */
-
 #topBtn {
     display: none;
     position: fixed;
@@ -67,7 +20,9 @@
 }
 
 
-/* nav-menu */
+/*
+ * Navigation bar
+ */
 #site-nav {
     text-align: center;
 }
@@ -91,6 +46,9 @@
     padding: 0px 3px;
 }
 
+/*
+ * Top screen
+ */
 .top-screen {
     position: relative;
     z-index: 2;
@@ -120,38 +78,9 @@
     border-radius: 50%;
 }
 
-
-/*
- * components
- */
-
-.welcome-block-1 {
-    margin: 0 0 50px 0;
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-}
-
-.left-bar,
-.show-page {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-.content-separator {
-	display: block;
-	content: "";
-	width: 25px;
-	height: 3px;
-	background: #000;
-	margin: 85px auto 0;
-	border-radius: 1px;
-}
-
 /*
  * supplement bootstrap
  */
-
 .btn-outline-color1 {
     color: #00ab94;
     background-color: transparent;
@@ -208,7 +137,6 @@ a.bg-light:hover {
 /*
  * Timeline
  */
-
 *,
 *::before,
 *::after {
