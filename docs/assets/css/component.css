@@ -1,229 +1,237 @@
 /*
  * Top button
  */
+
 #topBtn {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 15px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: #000;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 10px;
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
 }
+
 #topBtn:hover {
-    color: #777;
+  color: #777;
 }
 
 
 /*
  * Navigation bar
  */
-#site-nav {
-    text-align: center;
+
+.navbar {
+	padding: 0.25rem 1rem;
 }
 
-.site-nav li {
-    font-size: 18px;
-    display: inline-block;
-    padding: 0px 5px;
-    border-bottom: solid transparent 1.5pt;
+.navbar-nav li {
+  font-size: 1.2em;
+  display: inline-block;
+  padding: 0px 5px;
+  border-bottom: solid transparent 1.5pt;
 }
 
-.site-nav li:hover {
-    border-bottom: solid #00ab94 1.5pt;
+.navbar-nav li:hover {
+  border-bottom: solid #00ab94 1.5pt;
 }
 
-.nav-active {
-    border-bottom: solid #00ab94 1.5pt;
+.navbar-nav form {
+  padding: 0px 3px;
 }
 
-.site-nav form {
-    padding: 0px 3px;
-}
 
 /*
  * Top screen
  */
+
 .top-screen {
-    position: relative;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.2);
-    color: #fff;
-    width: 100%;
-    height: 50%;
-    text-align: center;
-    overflow: hidden;
+  position: relative;
+  /* background: rgba(0, 0, 0, 0.2); */
+  color: #fff;
+  width: 100%;
+  height: 68%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.top-logo {
+  position: relative;
+  top: 58%;
 }
 
 .top-logo-text {
-    display: inline-block;
-    position: relative;
-    top: 39%;
-    padding-left: 5px;
-    color: #fff;
-    font-size: 3em;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0 130px 0 20px;
+  color: #fff;
+  font-size: 2.5em;
 }
 
 #profile-pic {
-    position: relative;
-    z-index: 3;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 90px 0;
-    border-radius: 50%;
+  position: relative;
+  z-index: 3;
+  width: 150px;
+  height: 150px;
+  margin: -100px 0 20px 0;
+  border-radius: 50%;
 }
+
 
 /*
  * supplement bootstrap
  */
+
 .btn-outline-color1 {
-    color: #00ab94;
-    background-color: transparent;
-    background-image: none;
-    border-color: #00ab94;
+  color: #00ab94;
+  background-color: transparent;
+  background-image: none;
+  border-color: #00ab94;
 }
 
 .btn-outline-color1:hover {
-    color: #fff;
-    background-color: #00ab94;
-    border-color: #00ab94;
+  color: #fff;
+  background-color: #00ab94;
+  border-color: #00ab94;
 }
 
 .btn-outline-color1:focus,
 .btn-outline-color1.focus {
-    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
 .btn-outline-color1.disabled,
 .btn-outline-color1:disabled {
-    color: #00ab94;
-    background-color: transparent;
+  color: #00ab94;
+  background-color: transparent;
 }
 
 .btn-outline-color1:not([disabled]):not(.disabled):active,
 .btn-outline-color1:not([disabled]):not(.disabled).active,
 .show>.btn-outline-color1.dropdown-toggle {
-    color: #fff;
-    background-color: #00ab94;
-    border-color: #00ab94;
-    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+  color: #fff;
+  background-color: #00ab94;
+  border-color: #00ab94;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
 .bg-darkone {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 a.bg-darktone:focus,
 a.bg-primary:hover {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .bg-lightone {
-    background-color: rgba(255, 255, 255, 0.9) !important;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 a.bg-light:focus,
 a.bg-light:hover {
-    background-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 
 /*
  * Timeline
  */
+
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 /* TIMELINE
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-    background: #FFF;
-    margin: 0 0 10px 0;
-    padding: 0 0 10px 0;
+  background: #FFF;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
 }
 
 .timeline ul li {
-    list-style-type: none;
-    position: relative;
-    width: 2px;
-    margin: 0 auto;
-    padding-top: 50px;
-    background: #111;
+  list-style-type: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #111;
 }
 
 .timeline ul li::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 8px;
-    transform: translateX(-50%);
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: inherit;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: inherit;
 }
 
 .timeline ul li div {
-    position: relative;
-    bottom: 0;
-    width: 300px;
-    padding: 15px 15px 10px 15px;
-    background: #FFF;
-    text-align: left;
-    /* border: solid; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    font-size: 0.8rem;
+  position: relative;
+  bottom: 0;
+  width: 300px;
+  padding: 15px 15px 10px 15px;
+  background: #FFF;
+  text-align: left;
+  /* border: solid; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  font-size: 0.8rem;
 }
+
 .timeline ul li div:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
 .timeline ul li div::before {
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    width: 0;
-    height: 0;
-    border-style: solid;
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
 
 .timeline ul li:nth-child(odd) div {
-    left: 45px;
+  left: 45px;
 }
 
 .timeline ul li:nth-child(odd) div::before {
-    left: -16px;
-    border-width: 4px 8px 4px 0;
-    border-color: transparent #000 transparent transparent;
+  left: -16px;
+  border-width: 4px 8px 4px 0;
+  border-color: transparent #000 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
-    left: -339px;
+  left: -339px;
 }
 
 .timeline ul li:nth-child(even) div::before {
-    right: -16px;
-    border-width: 4px 0 4px 8px;
-    border-color: transparent transparent transparent #000;
+  right: -16px;
+  border-width: 4px 0 4px 8px;
+  border-color: transparent transparent transparent #000;
 }
 
 time {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 
@@ -231,31 +239,31 @@ time {
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul li::after {
-    transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out;
 }
 
 .timeline ul li.in-view::after {
-    background: rgb(0, 0, 0, 0.9);
+  background: rgb(0, 0, 0, 0.9);
 }
 
 .timeline ul li div {
-    visibility: hidden;
-    opacity: 0;
-    transition: all .5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) div {
-    transform: translate3d(150px, 0, 0);
+  transform: translate3d(150px, 0, 0);
 }
 
 .timeline ul li:nth-child(even) div {
-    transform: translate3d(-150px, 0, 0);
+  transform: translate3d(-150px, 0, 0);
 }
 
 .timeline ul li.in-view div {
-    transform: none;
-    visibility: visible;
-    opacity: 1;
+  transform: none;
+  visibility: visible;
+  opacity: 1;
 }
 
 
@@ -263,28 +271,32 @@ time {
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 900px) {
-    .timeline ul li div {
-        width: 150px;
-    }
-    .timeline ul li:nth-child(even) div {
-        left: -189px;
-        /*250+45-6*/
-    }
+  .timeline ul li div {
+    width: 150px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -189px;
+    /*250+45-6*/
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .timeline ul li {
-        margin-left: 20px;
-    }
-    .timeline ul li div {
-        width: calc(100vw - 191px);
-    }
-    .timeline ul li:nth-child(even) div {
-        left: 45px;
-    }
-    .timeline ul li:nth-child(even) div::before {
-        left: -16px;
-        border-width: 4px 8px 4px 0;
-        border-color: transparent #000 transparent transparent;
-    }
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 191px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -16px;
+    border-width: 4px 8px 4px 0;
+    border-color: transparent #000 transparent transparent;
+	}
+	.top-logo-text {
+		padding: 0 70px 0 20px;
+		font-size: 1.5em;
+	}
 }

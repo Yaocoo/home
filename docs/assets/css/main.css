@@ -45,21 +45,24 @@
 
 
 /* Links */
-a{
+
+a {
   /* color: #f2f2f2; */
   text-decoration: none;
 }
+
 a:focus,
 a:hover {
   /* color: #f2f2f2; */
   text-decoration: none;
 }
 
+
 /*
  * components
  */
 
- .welcome-block-1 {
+.welcome-block-1 {
   margin: 0 0 50px 0;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
@@ -73,11 +76,11 @@ a:hover {
 }
 
 .content-separator {
-display: block;
-content: "";
-width: 25px;
-height: 3px;
-background: #000;
-margin: 85px auto 0;
-border-radius: 1px;
+  display: block;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background: #000;
+  margin: 85px auto 0;
+  border-radius: 1px;
 }
