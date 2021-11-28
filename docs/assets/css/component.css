@@ -163,7 +163,7 @@ a.bg-light:hover {
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  background: #FFF;
+  /* background: #FFF; */
   margin: 0 0 10px 0;
   padding: 0 0 10px 0;
 }
@@ -194,7 +194,7 @@ a.bg-light:hover {
   bottom: 0;
   width: 300px;
   padding: 15px 15px 10px 15px;
-  background: #FFF;
+  /* background: #FFF; */
   text-align: left;
   /* border: solid; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
